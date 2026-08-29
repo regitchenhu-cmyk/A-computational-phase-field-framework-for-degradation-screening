@@ -1,0 +1,91 @@
+Case,CheckId,Severity,Status,Value,Limit,Message
+Fixed BC,end_mat_exists,HARD,PASS,"source_states_validation/FixedVsContact/Standard_21MPa_80C_fixedBC/end.mat","existing end.mat",Final state exists.
+Fixed BC,top_level_variables,HARD,PASS,"","mesh,physics,solver,dt,tvec,results,n_max,tmax",Required saved variables.
+Fixed BC,saved_controls,HARD,PASS,"dt=30,nMax=180,tmax=259200","dt=30,nMax=180,tmax=259200",Validation controls match the declared case.
+Fixed BC,time_vector,HARD,PASS,"points=180,finalDays=3.1170371","finite increasing, final in (3,3.25] days",Adaptive schedule is complete.
+Fixed BC,physics_time_alignment,HARD,PASS,"269312.0056","269312.0056",Physics and reporting times agree.
+Fixed BC,mesh_manifest,HARD,PASS,"2240,81x113","2240,81x113",Actual Q9 mesh matches the case label.
+Fixed BC,result_fields,HARD,PASS,"","CL_avg,CL_max,phi_p99,alpha_p99,Df_p99,screening_index,Df_max,totalCycles,leakage_Q,leakage_Q_poiseuille,leakage_path_cost,leakage_time_darcy,leakage_time_poiseuille,degradation_connected",Required histories.
+Fixed BC,history_lengths,HARD,PASS,"180","histories match tvec; leak times are scalar sentinels",No truncated series.
+Fixed BC,finite_and_sentinels,HARD,PASS,"finite=1,sentinel=1","finite except declared +Inf/NaN sentinels",Nonfinite values are intentional.
+Fixed BC,required_models,HARD,PASS,"fatigue=1,phase=1","both present",State checks require both models.
+Fixed BC,fatigue_bounds,HARD,PASS,"[0,0.125382]","[0,1]",Bounded committed state.
+Fixed BC,fatigue_trial_committed,HARD,PASS,"0","<=1e-12",Final trial state was committed.
+Fixed BC,cycles_equal_frequency_time,HARD,PASS,"5.457e-12","relative <=1e-8",Cycle accumulation follows the saved time vector.
+Fixed BC,screening_definition,HARD,PASS,"0","<=1e-12",Stored screening envelope is exact.
+Contact-aware,end_mat_exists,HARD,PASS,"source_states_validation/FixedVsContact/Standard_21MPa_80C_contactAware/end.mat","existing end.mat",Final state exists.
+Contact-aware,top_level_variables,HARD,PASS,"","mesh,physics,solver,dt,tvec,results,n_max,tmax",Required saved variables.
+Contact-aware,saved_controls,HARD,PASS,"dt=30,nMax=180,tmax=259200","dt=30,nMax=180,tmax=259200",Validation controls match the declared case.
+Contact-aware,time_vector,HARD,PASS,"points=180,finalDays=3.1170371","finite increasing, final in (3,3.25] days",Adaptive schedule is complete.
+Contact-aware,physics_time_alignment,HARD,PASS,"269312.0056","269312.0056",Physics and reporting times agree.
+Contact-aware,mesh_manifest,HARD,PASS,"2240,81x113","2240,81x113",Actual Q9 mesh matches the case label.
+Contact-aware,result_fields,HARD,PASS,"","CL_avg,CL_max,phi_p99,alpha_p99,Df_p99,screening_index,Df_max,totalCycles,leakage_Q,leakage_Q_poiseuille,leakage_path_cost,leakage_time_darcy,leakage_time_poiseuille,degradation_connected",Required histories.
+Contact-aware,history_lengths,HARD,PASS,"180","histories match tvec; leak times are scalar sentinels",No truncated series.
+Contact-aware,finite_and_sentinels,HARD,PASS,"finite=1,sentinel=1","finite except declared +Inf/NaN sentinels",Nonfinite values are intentional.
+Contact-aware,required_models,HARD,PASS,"fatigue=1,phase=1","both present",State checks require both models.
+Contact-aware,fatigue_bounds,HARD,PASS,"[0,0.134386]","[0,1]",Bounded committed state.
+Contact-aware,fatigue_trial_committed,HARD,PASS,"0","<=1e-12",Final trial state was committed.
+Contact-aware,cycles_equal_frequency_time,HARD,PASS,"5.457e-12","relative <=1e-8",Cycle accumulation follows the saved time vector.
+Contact-aware,screening_definition,HARD,PASS,"0","<=1e-12",Stored screening envelope is exact.
+G30x42,end_mat_exists,HARD,PASS,"source_states_validation/Validation/cases/Standard_21MPa_80C_grid_30x42/end.mat","existing end.mat",Final state exists.
+G30x42,top_level_variables,HARD,PASS,"","mesh,physics,solver,dt,tvec,results,n_max,tmax",Required saved variables.
+G30x42,saved_controls,HARD,PASS,"dt=30,nMax=180,tmax=259200","dt=30,nMax=180,tmax=259200",Validation controls match the declared case.
+G30x42,time_vector,HARD,PASS,"points=180,finalDays=3.1170371","finite increasing, final in (3,3.25] days",Adaptive schedule is complete.
+G30x42,physics_time_alignment,HARD,PASS,"269312.0056","269312.0056",Physics and reporting times agree.
+G30x42,mesh_manifest,HARD,PASS,"1260,61x85","1260,61x85",Actual Q9 mesh matches the case label.
+G30x42,result_fields,HARD,PASS,"","CL_avg,CL_max,phi_p99,alpha_p99,Df_p99,screening_index,Df_max,totalCycles,leakage_Q,leakage_Q_poiseuille,leakage_path_cost,leakage_time_darcy,leakage_time_poiseuille,degradation_connected",Required histories.
+G30x42,history_lengths,HARD,PASS,"180","histories match tvec; leak times are scalar sentinels",No truncated series.
+G30x42,finite_and_sentinels,HARD,PASS,"finite=1,sentinel=1","finite except declared +Inf/NaN sentinels",Nonfinite values are intentional.
+G30x42,required_models,HARD,PASS,"fatigue=1,phase=1","both present",State checks require both models.
+G30x42,fatigue_bounds,HARD,PASS,"[0,0.134341]","[0,1]",Bounded committed state.
+G30x42,fatigue_trial_committed,HARD,PASS,"0","<=1e-12",Final trial state was committed.
+G30x42,cycles_equal_frequency_time,HARD,PASS,"5.457e-12","relative <=1e-8",Cycle accumulation follows the saved time vector.
+G30x42,screening_definition,HARD,PASS,"0","<=1e-12",Stored screening envelope is exact.
+G50x70,end_mat_exists,HARD,PASS,"source_states_validation/Validation/cases/Standard_21MPa_80C_grid_50x70/end.mat","existing end.mat",Final state exists.
+G50x70,top_level_variables,HARD,PASS,"","mesh,physics,solver,dt,tvec,results,n_max,tmax",Required saved variables.
+G50x70,saved_controls,HARD,PASS,"dt=30,nMax=180,tmax=259200","dt=30,nMax=180,tmax=259200",Validation controls match the declared case.
+G50x70,time_vector,HARD,PASS,"points=180,finalDays=3.1170371","finite increasing, final in (3,3.25] days",Adaptive schedule is complete.
+G50x70,physics_time_alignment,HARD,PASS,"269312.0056","269312.0056",Physics and reporting times agree.
+G50x70,mesh_manifest,HARD,PASS,"3500,101x141","3500,101x141",Actual Q9 mesh matches the case label.
+G50x70,result_fields,HARD,PASS,"","CL_avg,CL_max,phi_p99,alpha_p99,Df_p99,screening_index,Df_max,totalCycles,leakage_Q,leakage_Q_poiseuille,leakage_path_cost,leakage_time_darcy,leakage_time_poiseuille,degradation_connected",Required histories.
+G50x70,history_lengths,HARD,PASS,"180","histories match tvec; leak times are scalar sentinels",No truncated series.
+G50x70,finite_and_sentinels,HARD,PASS,"finite=1,sentinel=1","finite except declared +Inf/NaN sentinels",Nonfinite values are intentional.
+G50x70,required_models,HARD,PASS,"fatigue=1,phase=1","both present",State checks require both models.
+G50x70,fatigue_bounds,HARD,PASS,"[0,0.134416]","[0,1]",Bounded committed state.
+G50x70,fatigue_trial_committed,HARD,PASS,"0","<=1e-12",Final trial state was committed.
+G50x70,cycles_equal_frequency_time,HARD,PASS,"5.457e-12","relative <=1e-8",Cycle accumulation follows the saved time vector.
+G50x70,screening_definition,HARD,PASS,"0","<=1e-12",Stored screening envelope is exact.
+dt20s,end_mat_exists,HARD,PASS,"source_states_validation/Validation/cases/Standard_21MPa_80C_dt_20s/end.mat","existing end.mat",Final state exists.
+dt20s,top_level_variables,HARD,PASS,"","mesh,physics,solver,dt,tvec,results,n_max,tmax",Required saved variables.
+dt20s,saved_controls,HARD,PASS,"dt=20,nMax=215,tmax=259200","dt=20,nMax=215,tmax=259200",Validation controls match the declared case.
+dt20s,time_vector,HARD,PASS,"points=190,finalDays=3.07553957","finite increasing, final in (3,3.25] days",Adaptive schedule is complete.
+dt20s,physics_time_alignment,HARD,PASS,"265726.6186","265726.6186",Physics and reporting times agree.
+dt20s,mesh_manifest,HARD,PASS,"2240,81x113","2240,81x113",Actual Q9 mesh matches the case label.
+dt20s,result_fields,HARD,PASS,"","CL_avg,CL_max,phi_p99,alpha_p99,Df_p99,screening_index,Df_max,totalCycles,leakage_Q,leakage_Q_poiseuille,leakage_path_cost,leakage_time_darcy,leakage_time_poiseuille,degradation_connected",Required histories.
+dt20s,history_lengths,HARD,PASS,"190","histories match tvec; leak times are scalar sentinels",No truncated series.
+dt20s,finite_and_sentinels,HARD,PASS,"finite=1,sentinel=1","finite except declared +Inf/NaN sentinels",Nonfinite values are intentional.
+dt20s,required_models,HARD,PASS,"fatigue=1,phase=1","both present",State checks require both models.
+dt20s,fatigue_bounds,HARD,PASS,"[0,0.132593]","[0,1]",Bounded committed state.
+dt20s,fatigue_trial_committed,HARD,PASS,"0","<=1e-12",Final trial state was committed.
+dt20s,cycles_equal_frequency_time,HARD,PASS,"1.819e-12","relative <=1e-8",Cycle accumulation follows the saved time vector.
+dt20s,screening_definition,HARD,PASS,"0","<=1e-12",Stored screening envelope is exact.
+dt45s,end_mat_exists,HARD,PASS,"source_states_validation/Validation/cases/Standard_21MPa_80C_dt_45s/end.mat","existing end.mat",Final state exists.
+dt45s,top_level_variables,HARD,PASS,"","mesh,physics,solver,dt,tvec,results,n_max,tmax",Required saved variables.
+dt45s,saved_controls,HARD,PASS,"dt=45,nMax=170,tmax=259200","dt=45,nMax=170,tmax=259200",Validation controls match the declared case.
+dt45s,time_vector,HARD,PASS,"points=169,finalDays=3.03788184","finite increasing, final in (3,3.25] days",Adaptive schedule is complete.
+dt45s,physics_time_alignment,HARD,PASS,"262472.9907","262472.9907",Physics and reporting times agree.
+dt45s,mesh_manifest,HARD,PASS,"2240,81x113","2240,81x113",Actual Q9 mesh matches the case label.
+dt45s,result_fields,HARD,PASS,"","CL_avg,CL_max,phi_p99,alpha_p99,Df_p99,screening_index,Df_max,totalCycles,leakage_Q,leakage_Q_poiseuille,leakage_path_cost,leakage_time_darcy,leakage_time_poiseuille,degradation_connected",Required histories.
+dt45s,history_lengths,HARD,PASS,"169","histories match tvec; leak times are scalar sentinels",No truncated series.
+dt45s,finite_and_sentinels,HARD,PASS,"finite=1,sentinel=1","finite except declared +Inf/NaN sentinels",Nonfinite values are intentional.
+dt45s,required_models,HARD,PASS,"fatigue=1,phase=1","both present",State checks require both models.
+dt45s,fatigue_bounds,HARD,PASS,"[0,0.130966]","[0,1]",Bounded committed state.
+dt45s,fatigue_trial_committed,HARD,PASS,"0","<=1e-12",Final trial state was committed.
+dt45s,cycles_equal_frequency_time,HARD,PASS,"7.276e-12","relative <=1e-8",Cycle accumulation follows the saved time vector.
+dt45s,screening_definition,HARD,PASS,"0","<=1e-12",Stored screening envelope is exact.
+SUMMARY,summary_exists,HARD,PASS,"source_states_validation/Validation/grid_sensitivity_summary.csv","existing CSV",Final summaries must exist.
+SUMMARY,summary_exists,HARD,PASS,"source_states_validation/Validation/time_step_sensitivity_summary.csv","existing CSV",Final summaries must exist.
+SUMMARY,summary_exists,HARD,PASS,"source_states_validation/fixed_vs_contact_summary.csv","existing CSV",Final summaries must exist.
+SUMMARY,grid_summary_values,HARD,PASS,"4.4409e-16","<=1e-12",CSV values are re-derived from the six final states.
+SUMMARY,time_summary_values,HARD,PASS,"3.1086e-15","<=1e-12",CSV values are re-derived from the six final states.
+SUMMARY,fixed_contact_summary_values,HARD,PASS,"4.4409e-16","<=1e-12",Fixed/contact CSV is re-derived from final states.

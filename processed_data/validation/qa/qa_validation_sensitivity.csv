@@ -1,0 +1,3 @@
+Group,Cases,DfMaxCoarseOrSmall,DfMaxBaseline,DfMaxFineOrLarge,MaxAbsRelativeDf_pct
+grid,G30x42 / G40x56 / G50x70,0.129285,0.12933,0.12936,0.0347947112038889
+time,dt20s / dt30s / dt45s,0.12933,0.12933,0.12933,0

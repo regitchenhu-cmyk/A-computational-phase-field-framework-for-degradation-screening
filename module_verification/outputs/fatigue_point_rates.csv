@@ -1,0 +1,4 @@
+Case,Wplus_Jm3,WplusOverW0,Pmax_Pa,Pmin_Pa,PressureAmplitude_Pa,PressureRatio,Activation,ContactMultiplier,EnergeticRate,BaseRateTerm,RawRatePerCycle,AppliedRatePerCycle,Branch
+uncapped_base_below_threshold,2400000,0.04,21000000,500000,20500000,0.976190476190476,0,1.25,0,9.52947845804989e-07,1.19118480725624e-06,1.19118480725624e-06,uncapped
+uncapped_active_low_amplitude,6000000,0.1,521000,500000,21000,0.001,1,1.25,2.51188643150958e-06,1e-12,3.13985928938698e-06,3.13985928938698e-06,uncapped
+capped_active_main_amplitude,6000000,0.1,21000000,500000,20500000,0.976190476190476,1,1.25,0.00971497035248605,9.52947845804989e-07,0.0121449041254148,1e-05,capped

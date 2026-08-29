@@ -1,0 +1,9 @@
+Test,Metric,Observed,Acceptance,Passed
+Fick fine-grid relative L2,L2Rel,6.78629481506226e-05,<= 1.0e-2,1
+Fick fine-grid relative Linf,LinfRel,3.73352043481426e-05,<= 2.0e-2,1
+Fick fine-grid mean relative error,AverageRelError,0.000186063406994112,<= 1.0e-2,1
+Fick grid refinement error ratio,L2Rel_fine/L2Rel_coarse_grid,0.0197750644904755,< 1,1
+Fick time-step refinement error ratio,L2Rel_fine/L2Rel_coarse_dt,0.0147588928581507,< 1,1
+Fatigue below-cap and rate-capped branch coverage,required branches present,1,= 1,1
+Fatigue discrete versus closed-form history,maximum absolute history error,1.91624494050302e-12,<= 5.0e-12,1
+Fatigue cycle-jump invariance,maximum final-D range across cycle jumps,2.37254660362396e-13,<= 1.0e-12,1

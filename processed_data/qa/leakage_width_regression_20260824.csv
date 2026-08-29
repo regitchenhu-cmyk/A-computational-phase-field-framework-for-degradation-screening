@@ -1,0 +1,3 @@
+quantity,width_case_1,width_case_2,observed_ratio,expected_ratio,absolute_tolerance,status
+Q_D,1.0,2.0,2.0,2.0,1e-10,PASS
+Q_P,1.0,2.0,1.0,1.0,1e-10,PASS

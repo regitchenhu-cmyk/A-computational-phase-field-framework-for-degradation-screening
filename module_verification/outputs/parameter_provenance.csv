@@ -1,0 +1,14 @@
+Parameter,Value,Unit,Source
+L,0.0035,m,main_seal.m geometry
+D_L,6e-13,m^2/s,main_seal.m FluidDiffusion input
+C_L_boundary,0.65,-,calibrated_degradation_options.m
+W0,60000000,J/m^3,calibrated_degradation_options.m
+beta,2,-,calibrated_degradation_options.m
+P_min,500000,Pa,main_seal.m FatigueDamage input
+P_ref_fatigue,21000000,Pa,calibrated_degradation_options.m
+m_P,1.2,-,calibrated_degradation_options.m
+r0,1,cycle^-1,calibrated_degradation_options.m
+r_base,1e-06,cycle^-1,calibrated_degradation_options.m
+r_max,1e-05,cycle^-1,calibrated_degradation_options.m
+A_c,0.25,-,main_seal.m FatigueDamage input
+m_c,1,-,main_seal.m FatigueDamage input

@@ -1,0 +1,61 @@
+Independent analytical module verification
+Started: 2026-08-28 19:34:50
+MATLAB: 24.2.0.2712019 (R2024b)
+Root: module_verification (archive-relative)
+
+Predeclared acceptance criteria:
+  Fick fine-grid relative L2             <= 1.0e-2
+  Fick fine-grid relative Linf           <= 2.0e-2
+  Fick fine-grid mean relative error     <= 1.0e-2
+  Fick grid-refinement L2 error ratio    <  1 (common dt=0.25 h)
+  Fick time-refinement L2 error ratio    <  1 (Nx=70)
+  Fatigue required rate-branch coverage  =  1
+  Fatigue max closed-form history error  <= 5.0e-12
+  Fatigue final-D cycle-jump range       <= 1.0e-12
+
+=== 1-D Fick diffusion check ===
+Nx014_dt12h       h=2.500e-04 m dt= 12.00 h steps=  40 L2rel=2.127e-03 Linfrel=1.573e-03 AvgRel=3.186e-03
+Nx014_dt3h        h=2.500e-04 m dt=  3.00 h steps= 160 L2rel=2.515e-03 Linfrel=1.687e-03 AvgRel=5.483e-03
+Nx014_dt0p25h     h=2.500e-04 m dt=  0.25 h steps=1920 L2rel=3.432e-03 Linfrel=2.431e-03 AvgRel=6.185e-03
+Nx070_dt12h       h=5.000e-05 m dt= 12.00 h steps=  40 L2rel=4.598e-03 Linfrel=3.309e-03 AvgRel=2.868e-03
+Nx070_dt3h        h=5.000e-05 m dt=  3.00 h steps= 160 L2rel=1.061e-03 Linfrel=7.526e-04 AvgRel=5.295e-04
+Nx070_dt0p25h     h=5.000e-05 m dt=  0.25 h steps=1920 L2rel=6.786e-05 Linfrel=3.734e-05 AvgRel=1.861e-04
+Fick verification status:
+                     Test                                  Metric                 Observed     Acceptance     Passed
+    _______________________________________    ______________________________    __________    ___________    ______
+
+    "Fick fine-grid relative L2"               "L2Rel"                           6.7863e-05    "<= 1.0e-2"    true  
+    "Fick fine-grid relative Linf"             "LinfRel"                         3.7335e-05    "<= 2.0e-2"    true  
+    "Fick fine-grid mean relative error"       "AverageRelError"                 0.00018606    "<= 1.0e-2"    true  
+    "Fick grid refinement error ratio"         "L2Rel_fine/L2Rel_coarse_grid"      0.019775    "< 1"          true  
+    "Fick time-step refinement error ratio"    "L2Rel_fine/L2Rel_coarse_dt"        0.014759    "< 1"          true  
+
+
+=== Constant-Wplus fatigue point check ===
+uncapped_base_below_threshold      activation=0 raw= 1.191e-06 applied= 1.191e-06 branch=uncapped
+uncapped_active_low_amplitude      activation=1 raw= 3.140e-06 applied= 3.140e-06 branch=uncapped
+capped_active_main_amplitude       activation=1 raw= 1.214e-02 applied= 1.000e-05 branch=capped
+Fatigue verification status:
+                           Test                                              Metric                       Observed      Acceptance     Passed
+    ___________________________________________________    __________________________________________    __________    ____________    ______
+
+    "Fatigue below-cap and rate-capped branch coverage"    "required branches present"                            1    "= 1"           true  
+    "Fatigue discrete versus closed-form history"          "maximum absolute history error"              1.9162e-12    "<= 5.0e-12"    true  
+    "Fatigue cycle-jump invariance"                        "maximum final-D range across cycle jumps"    2.3725e-13    "<= 1.0e-12"    true  
+
+
+=== Overall status ===
+                           Test                                              Metric                       Observed      Acceptance     Passed
+    ___________________________________________________    __________________________________________    __________    ____________    ______
+
+    "Fick fine-grid relative L2"                           "L2Rel"                                       6.7863e-05    "<= 1.0e-2"     true  
+    "Fick fine-grid relative Linf"                         "LinfRel"                                     3.7335e-05    "<= 2.0e-2"     true  
+    "Fick fine-grid mean relative error"                   "AverageRelError"                             0.00018606    "<= 1.0e-2"     true  
+    "Fick grid refinement error ratio"                     "L2Rel_fine/L2Rel_coarse_grid"                  0.019775    "< 1"           true  
+    "Fick time-step refinement error ratio"                "L2Rel_fine/L2Rel_coarse_dt"                    0.014759    "< 1"           true  
+    "Fatigue below-cap and rate-capped branch coverage"    "required branches present"                            1    "= 1"           true  
+    "Fatigue discrete versus closed-form history"          "maximum absolute history error"              1.9162e-12    "<= 5.0e-12"    true  
+    "Fatigue cycle-jump invariance"                        "maximum final-D range across cycle jumps"    2.3725e-13    "<= 1.0e-12"    true  
+
+OVERALL_PASS=1
+Completed: 2026-08-28 19:35:00
